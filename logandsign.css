@@ -1,0 +1,70 @@
+body{
+    background-color: gray;
+    opacity: 50%;
+}
+.form1
+{
+    background: hotpink;
+    
+    width: 200px;
+    height: 400px;
+    padding: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white; 
+    
+  
+}
+h1{
+    align-items: center;
+    text-align: center;
+   
+}
+h1:hover
+{
+    color: greenyellow;
+}
+h2{
+    align-items: center;
+    text-align: center;
+}
+h2:hover
+{
+    color: hotpink;
+}
+.btn
+{
+    font-weight: 200;
+    color: black;
+    margin-left: 50px;
+    width: 100px;
+}
+
+.form2{
+
+    background-color: greenyellow;
+     margin-left: 300px;
+     margin-top:-450px;
+     font-size: 17px;
+    width: 250px;
+    height: 400px;
+    padding: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+
+}
+.form3{
+
+    background-color: rgb(94, 94, 250);
+   width: 270px;
+   height: 300px;
+   margin-left: 650px;
+   margin-top:-450px;
+
+
+}
+
+#update
+{
+   margin-left: 100px;
+   width: 100px;
+}

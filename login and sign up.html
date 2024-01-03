@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="logandsign.css">
+    <title>Document</title>
+</head>
+<body>
+    <form class="form1" onsubmit="return validateLogin()">
+        <h1>login</h1>
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        <input class="btn" type="submit" value="Login"><br><br>
+        <input  class="btn" type="submit" value="forget pass"><br><br>
+          <a href="review.css"><input  style="margin-left: 150px;" type="submit" value="signup"><br><br> </a>
+
+    </form>
+
+    <form  class="form2" onsubmit="return validateSignup()">
+        <h2>sign up</h2>
+        <label for="username">New Username:</label><br>
+        <input type="text" id="username" name="username" required placeholder="enter your name"><br>
+
+        <label for="password">New Password:</label><br>
+        <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+        title="Password must contain at least one number, one uppercase and lowercase letter, and at least 8 or more characters"><br>
+ 
+        <label for="address">Address:</label><br>
+        <select id="address" name="address">
+            <option value="Cairo">Cairo</option>
+            <option value="Giza">Giza</option>
+            <option value="Alexandria">Alexandria</option>
+        </select><br>
+
+        <label for="phoneNumber">Phone Number:</label><br>
+        <input type="tel" id="phoneNumber" name="SphoneNumber" title="phone number must be 11"><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+   
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" min="18" max="60"><br>
+
+        <input type="submit" value="submit">
+    </form>
+    <form class="form3" >
+       <h3>forget password</h3>
+        <label for="username">newusername:</label><br>
+        <input type="text" id="nusername" name="nusername"><br>
+        <label for="password">newPassword:</label><br>
+        <input type="password" id="npassword" name="npassword"><br><br>
+        <input id="update" class="btn" type="button" value="update"onclick="return forgotpassword()"><br><br>
+
+    </form>
+    
+
+    <script src="logandsign.js">
+    </script>
+</body>
+</html>
